@@ -1,4 +1,4 @@
-<form [formGroup] = 'miaForm' class = "reg">
+<form [formGroup] = 'miaForm'  class = "col-sm-4" (ngSubmit)="onAddUtenti()">
   REGISTRAZIONE
   <div>
     nome
@@ -20,3 +20,6 @@
     ADD
   </button>
 </form>
+
+{{error}}
+

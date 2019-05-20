@@ -4,12 +4,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ListaUtentiComponent } from './lista-utenti/lista-utenti.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrazioneComponent
+    RegistrazioneComponent,
+    ListaUtentiComponent
   ],
   imports: [
     BrowserModule,  NgbModule, ReactiveFormsModule, FormsModule

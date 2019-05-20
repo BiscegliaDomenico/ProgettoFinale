@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Utente } from './utente';
+import { UTENTI } from './mock-utenti';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'progetto-finale';
+
+  listaUtenti : Utente[] = UTENTI;
 }
