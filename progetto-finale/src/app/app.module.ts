@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ListaUtentiComponent } from './lista-utenti/lista-utenti.component';
+import { BachecaProdottiComponent } from './bacheca-prodotti/bacheca-prodotti.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrazioneComponent,
-    ListaUtentiComponent
+    ListaUtentiComponent,
+    BachecaProdottiComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,  NgbModule, ReactiveFormsModule, FormsModule

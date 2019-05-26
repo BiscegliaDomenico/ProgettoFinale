@@ -8,5 +8,7 @@
 }
 
 .reg{
-    width : 30%;
+    border-style: inset;
+    border-color : orange;
+    background-color : yellow;
 }
