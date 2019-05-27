@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Utente } from './utente';
 import { UTENTI } from './mock-utenti';
+import { Visible } from './visible.model';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { UTENTI } from './mock-utenti';
 })
 export class AppComponent {
   title = 'progetto-finale';
+  state : Visible = new Visible();
 
   listaUtenti : Utente[] = UTENTI;
 }
