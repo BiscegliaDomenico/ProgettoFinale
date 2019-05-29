@@ -1,1 +1,15 @@
-
+<div>
+    <form>
+        <div>
+            <h2>Bacheca annunci</h2>
+            <ul class="annunci">
+                <li *ngFor="let annuncio of lista" class="list-group" class="list-group-item-info"> {{annuncio.nome}}
+                    {{annuncio.cognome}} <br> {{annuncio.prodotto}} {{annuncio.descrizione}} <br>
+                    {{annuncio.commento}}
+                    <input #comment placeholder="inserisci un commento">
+                    <button (click)="onAddCommento(annuncio, comment)">aggiungi</button></li>
+            </ul>
+        </div>
+        {{error}}
+    </form>
+</div>

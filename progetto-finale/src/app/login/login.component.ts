@@ -2,8 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Visible } from '../visible.model';
-import { Statement } from '@angular/compiler';
-import { UTENTI } from '../mock-utenti';
 import { Utente } from '../utente';
 @Component({
   selector: 'app-login',
@@ -29,13 +27,13 @@ export class LoginComponent implements OnInit {
   {
     this.state.showLogin = !this.state.showLogin;
   }
-
+  error : string;
   onAccedi(){
     if(this.miaForm.valid){
       for(let i = 0; i<Utente.length; i ++){
-        if(Utente[i].nome == "nome" && Utente[i].cognome == "cognome" && Utente[i].mail == "mail" && Utente[i].password == "password"){
+        if( this.miaForm.controls['nome'].value == Utente[i].nome  && this.miaForm.controls['cognome'].value == Utente[i].cognome  && this.miaForm.controls['mail'].value == Utente[i].mail  && this.miaForm.controls['password'].value == Utente[i].password  ){
           this.log = true;
-        } 
+        }
       }
     }
   }
