@@ -1,8 +1,8 @@
-<div  class = "reg">
-  <form [formGroup] = 'miaForm' (ngSubmit)="onAddUtenti()">
+<div  class = "reg" style = "border-radius : 10px">
+  <form [formGroup] = 'miaForm' (ngSubmit)="onAddUtenti()" class = "aligned-form" >
     <h4>REGISTRAZIONE</h4>
     <div>
-      nome
+      
       <input type = 'text' [formControl] =" miaForm.controls['nome']" name = "nome" class = "form-control">
     </div>
     <div>
@@ -17,7 +17,7 @@
       password
       <input type = 'text' [formControl] =" miaForm.controls['password']" name = "password " class = "form-control">
     </div>
-    <button  class = "form-control">
+    <button  class = "btn btn-dark">
       ADD
     </button>
   </form>

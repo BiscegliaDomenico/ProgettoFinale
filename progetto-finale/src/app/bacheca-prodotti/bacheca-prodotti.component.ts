@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, Validator, FormGroup} from '@angular/forms';
 import { Annuncio } from '../annuncio';
+import { Utente } from '../utente';
 @Component({
   selector: 'app-bacheca-prodotti',
   templateUrl: './bacheca-prodotti.component.html',
@@ -9,7 +10,8 @@ import { Annuncio } from '../annuncio';
 export class BachecaProdottiComponent implements OnInit {
   miaForm : FormGroup;
   @Input() lista;
-  @Input() log;
+  @Input() utenteLoggato: Utente;
+
   error : string;
   constructor(fb : FormBuilder) { 
 
@@ -22,7 +24,7 @@ export class BachecaProdottiComponent implements OnInit {
 
     
 
-    if(this.log == true){
+    if(this.utenteLoggato.email != "###"){
       annuncio.commento = comment.value;
     }
     else{

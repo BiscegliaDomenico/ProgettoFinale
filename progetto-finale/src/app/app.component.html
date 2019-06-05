@@ -6,12 +6,12 @@
         <app-lista-utenti [lista] = "listaUtenti" ></app-lista-utenti>
     </div>
     <div>
-        <app-login [lista] = "listaUtenti" [state]= "state" class = "col-sm-3"></app-login>
+        <app-login [utenteLoggato]="utenteLoggato" [lista] = "listaUtenti" [state]= "state" class = "col-sm-3"></app-login>
     </div>
    
 </div>
 <div class = "row">
     <div class = "col-sm-4">
-        <app-bacheca-prodotti [lista] = "listaAnnunci" ></app-bacheca-prodotti>
+        <app-bacheca-prodotti [utenteLoggato]="utenteLoggato"  [lista] = "listaAnnunci" ></app-bacheca-prodotti>
     </div>
 </div>

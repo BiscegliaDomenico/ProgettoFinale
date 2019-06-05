@@ -16,4 +16,10 @@ export class AppComponent {
 
   listaUtenti : Utente[] = UTENTI;
   listaAnnunci : Annuncio[] = ANNUNCI;
+  utenteLoggato : Utente = new Utente();
+
+  constructor()
+  {
+    this.utenteLoggato.email = "###";
+  }
 }
