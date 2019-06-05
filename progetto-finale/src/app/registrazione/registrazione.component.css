@@ -8,8 +8,10 @@
 }
 
 .reg{
-    border-style: inset;
-    border-color : orange;
-    background-color : yellow;
+    border-style: solid;
+    border-color : rgb(0, 47, 255);
+    background-color : rgb(191, 255, 246);
 }
-
+.buttonreg{
+  border-style : solid white;
+}
