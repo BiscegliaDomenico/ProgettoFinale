@@ -1,0 +1,16 @@
+<div>
+  <form>
+    <h4>AGGIUNGI OGGETTO</h4>
+    <div>
+      oggetto:
+      <input type="text" [formControl] =" miaForm.controls['oggetto']" name = "oggetto" class = "form-control">
+    </div>
+    <div>
+      descrizione:
+      <input type="text" [formControl] =" miaForm.controls['descrizione']" name = "descrizione" class = "form-control">
+    </div>
+    <button (click)="onAggiungiOggetto()" class = "form-control" style = "border : solid white">
+              Aggiungi
+    </button>
+  </form>
+</div>

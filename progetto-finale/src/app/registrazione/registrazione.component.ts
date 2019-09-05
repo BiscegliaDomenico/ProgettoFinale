@@ -11,7 +11,7 @@ export class RegistrazioneComponent implements OnInit {
   @Input() lista;
   error : string;
 
-  constructor(fb : FormBuilder) { 
+  constructor(fb : FormBuilder) {
     this.miaForm = fb.group({'nome':['',Validators.required],
                               'cognome':['', Validators.required],
                               'mail' : ['', [Validators.required, Validators.email]],

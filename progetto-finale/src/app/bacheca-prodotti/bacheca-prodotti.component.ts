@@ -13,7 +13,7 @@ export class BachecaProdottiComponent implements OnInit {
   @Input() utenteLoggato: Utente;
 
   error : string;
-  constructor(fb : FormBuilder) { 
+  constructor(fb : FormBuilder) {
 
   }
 
@@ -22,7 +22,7 @@ export class BachecaProdottiComponent implements OnInit {
 
   onAddCommento(annuncio: Annuncio, comment: HTMLInputElement ){
 
-    
+
 
     if(this.utenteLoggato.email != "###"){
       annuncio.commento = comment.value;

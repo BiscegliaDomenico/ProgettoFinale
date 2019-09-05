@@ -7,6 +7,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ListaUtentiComponent } from './lista-utenti/lista-utenti.component';
 import { BachecaProdottiComponent } from './bacheca-prodotti/bacheca-prodotti.component';
 import { LoginComponent } from './login/login.component';
+import { NewObjectComponent } from './new-object/new-object.component';
+import { NewPostComponent } from './new-post/new-post.component';
+import { UserObjectComponent } from './user-object/user-object.component';
+import { ObjectListComponent } from './object-list/object-list.component';
 
 
 @NgModule({
@@ -15,7 +19,11 @@ import { LoginComponent } from './login/login.component';
     RegistrazioneComponent,
     ListaUtentiComponent,
     BachecaProdottiComponent,
-    LoginComponent
+    LoginComponent,
+    NewObjectComponent,
+    NewPostComponent,
+    UserObjectComponent,
+    ObjectListComponent
   ],
   imports: [
     BrowserModule,  NgbModule, ReactiveFormsModule, FormsModule

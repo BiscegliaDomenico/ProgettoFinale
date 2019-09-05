@@ -6,9 +6,9 @@
   <div *ngIf="state.showLogin">
       <form [formGroup] = 'miaForm'>
           <h4>LOGIN</h4>
-          
-          <div> 
-            email 
+
+          <div>
+            email
             <input type = 'text'  [formControl] ="miaForm.controls['mail']" name = "email" class = "form-control">
           </div>
           <div>
