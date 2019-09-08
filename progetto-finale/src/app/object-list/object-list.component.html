@@ -1,3 +1,10 @@
-<p>
-  object-list works!
-</p>
+<ul class="annunci">
+  LISTA OGGETTI
+				<li *ngFor="let annuncio of lista" class="list-group" class="list-group-item-info">
+
+					<article>
+						{{annuncio.nome}} {{annuncio.cognome}} possiede : {{annuncio.prodotto}}
+
+          </article>
+				</li>
+</ul>
